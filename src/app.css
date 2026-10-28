@@ -5,4 +5,16 @@
 	--font-montserrat: 'Montserrat', sans-serif;
 	--font-raleway: 'Raleway', sans-serif;
 	--font-tektur: 'Tektur', serif;
+
+	--color-space-50: oklch(95.91% 0.01 252.81);
+	--color-space-100: oklch(91.72% 0.02 250.39);
+	--color-space-200: oklch(83.33% 0.041 250.61);
+	--color-space-300: oklch(74.87% 0.063 250.89);
+	--color-space-400: oklch(66.36% 0.087 251.31);
+	--color-space-500: oklch(58.14% 0.109 251.31);
+	--color-space-600: oklch(49.4% 0.092 252);
+	--color-space-700: oklch(40.51% 0.072 251.9);
+	--color-space-800: oklch(31.11% 0.052 251.73);
+	--color-space-900: oklch(20.93% 0.029 251.39);
+	--color-space-950: oklch(17.84% 0.021 249.06);
 }
