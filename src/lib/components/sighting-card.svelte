@@ -15,8 +15,7 @@
 
 	// State
 	const isJustSpotted = $derived(
-		Temporal.Now.plainDateTimeISO().since(sighting.observedAt).total('seconds') <=
-			JUST_SPOTTED_THRESHOLD_SEC
+		(Date.now() - sighting.observedAt.getTime()) / 1000 <= JUST_SPOTTED_THRESHOLD_SEC
 	);
 </script>
 
@@ -49,7 +48,7 @@
 		<button
 			class="flex h-11 cursor-pointer items-center justify-center gap-3 rounded-full border border-space-400 bg-space-600 hover:bg-space-500 active:bg-space-700"
 		>
-			<IconBinoculars class="size-6"/>
+			<IconBinoculars class="size-6" />
 			<span>Watch this bird</span>
 		</button>
 	</div>

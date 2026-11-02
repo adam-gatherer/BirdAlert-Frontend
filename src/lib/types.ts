@@ -5,7 +5,7 @@ export type Sighting = {
 		scientificName: string;
 	};
 	image: string;
-	observedAt: Temporal.PlainDateTime;
+	observedAt: Date;
 	validationStatus: 'provisional' | 'validated';
 	count: number;
 };
