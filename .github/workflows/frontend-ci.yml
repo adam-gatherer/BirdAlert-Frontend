@@ -1,0 +1,12 @@
+name: Frontend CI
+
+on:
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  placeholder:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Frontend pipeline placeholder"
