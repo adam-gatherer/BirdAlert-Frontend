@@ -6,7 +6,22 @@ on:
 permissions: {}
 
 jobs:
-  placeholder:
+  test:
+    name: Test
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Frontend pipeline placeholder"
+      - run: echo "Placeholder for future frontend tests."
+
+  build:
+    name: Build
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Placeholder for building the Svelte application."
+
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Placeholder for uploading assets to S3 and invalidating CloudFront."
